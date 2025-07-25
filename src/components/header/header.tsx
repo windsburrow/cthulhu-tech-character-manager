@@ -10,9 +10,7 @@ export interface HeaderProps {
 export const Header = ({ className }: HeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <Link to="/" className={styles.logo}>
-                LOGO
-            </Link>
+            <Link to="/" className={styles.logo}></Link>
             <div className={styles.menu}>
                 <NavLink
                     to="/"
@@ -20,7 +18,7 @@ export const Header = ({ className }: HeaderProps) => {
                         classNames(styles.menuButton, { [styles.active]: isActive })
                     }
                 >
-                    Home
+                    Open
                 </NavLink>
                 <NavLink
                     to={ROUTES.about.to()}
@@ -28,7 +26,7 @@ export const Header = ({ className }: HeaderProps) => {
                         classNames(styles.menuButton, { [styles.active]: isActive })
                     }
                 >
-                    About
+                    Save
                 </NavLink>
             </div>
         </div>

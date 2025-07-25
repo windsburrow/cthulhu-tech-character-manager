@@ -17,7 +17,7 @@ export const SiteWrapper = ({ className, children }: SiteWrapperProps) => {
         <div className={classNames(styles.root, className)}>
             <Header />
             <div className={styles.content}>{children}</div>
-            <Footer />
+            <Footer className={styles.footer} />
         </div>
     );
 };
