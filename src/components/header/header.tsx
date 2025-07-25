@@ -18,7 +18,23 @@ export const Header = ({ className }: HeaderProps) => {
                         classNames(styles.menuButton, { [styles.active]: isActive })
                     }
                 >
+                    Sheet
+                </NavLink>
+                <NavLink
+                    to={ROUTES.open.to()}
+                    className={({ isActive }) =>
+                        classNames(styles.menuButton, { [styles.active]: isActive })
+                    }
+                >
                     Open
+                </NavLink>
+                <NavLink
+                    to={ROUTES.save.to()}
+                    className={({ isActive }) =>
+                        classNames(styles.menuButton, { [styles.active]: isActive })
+                    }
+                >
+                    Save
                 </NavLink>
                 <NavLink
                     to={ROUTES.about.to()}
@@ -26,7 +42,7 @@ export const Header = ({ className }: HeaderProps) => {
                         classNames(styles.menuButton, { [styles.active]: isActive })
                     }
                 >
-                    Save
+                    About
                 </NavLink>
             </div>
         </div>

@@ -10,6 +10,7 @@ import {
 import { ErrorComponent } from '~/components/error-component/error-component';
 import { SiteWrapper } from '~/components/site-wrapper/site-wrapper';
 import '~/styles/index.scss';
+import styles from './root.module.scss';
 
 export function Layout({ children }: { children: React.ReactNode }) {
     return (
@@ -20,7 +21,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Meta />
                 <Links />
             </head>
-            <body>
+            <body className={styles.body1}>
                 {children}
                 <ScrollRestoration />
                 <Scripts />
